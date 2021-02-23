@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
+# Bluetooth
+PRODUCT_SOONG_NAMESPACES += \
+    packages/apps/Bluetooth
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
