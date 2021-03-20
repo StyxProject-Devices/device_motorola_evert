@@ -1,12 +1,12 @@
 [
   {
-    "repository": "android_device_motorola_sdm660-common",
+    "repository": "device_motorola_sdm660-common",
     "target_path": "device/motorola/sdm660-common"
   },
   {
-    "repository": "motorola_camera2_primary",
+    "repository": "NemesisDevelopers/moto-camera/motorola_camera2_primary",
     "target_path": "packages/apps/MotCamera2",
-    "branch": "eleven-arm64",
-    "remote": "moto-camera"
+    "remote": "gitlab",
+    "branch": "eleven-arm64"
   }
 ]
