@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
+# Building StyxOS 
+STYX_BUILD_VARIANT := OFFICIAL
+
 # Device
 $(call inherit-product, device/motorola/evert/device.mk)
 
