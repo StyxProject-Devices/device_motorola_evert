@@ -2,7 +2,6 @@
 <p> Copyright 2020 - 2021 StyxOS Project </p>
 
 # Device configuration for Motorola G6 Plus (evert)
-===================================================
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -43,6 +42,36 @@ remote: Total 18661 (delta 0), reused 0 (delta 0), pack-reused 18661
 Receiving objects: 100% (18661/18661), 5.73 MiB | 40.06 MiB/s, done.
 Resolving deltas: 100% (11586/11586), done.
 :~/roms/StyxOS$
+```
+## Features 🌐
+
+Among the features that you can add to your environment, there are applications and features that will give the device an appearance in the style of the original ROM. Among the features that can be found here, it is your option to include it in your development environment. Clone them and build!
+
+### Motorola Camera 2 📸
+
+- Launch the camera with just a twist of your wrist and turn again to switch cameras.
+- Moto's smart cameras automatically adjust to lighting and motion conditions to deliver crystal-clear results.
+- Full integration in Google Photos. Select the thumbnail to share, edit, and backup.
+- The portrait mode of the dual cameras allows you to apply a blur to the background.
+- Crop mode for selected dual cameras to crop the lens in the foreground and add your own background image.
+- 360 ° panoramic photo and group selfie modes allow you to capture more parts of your photo than before.
+- The automatic scanning of the QR code puts the information at your fingertips: just place the camera on the QR code and select whether you want to search or copy.
+- Launch directly into Google Lens to find what you see, take action faster, and interact with the world.
+- AR Stickers
+
+<b> Source Code: </b> 
+``` 
+git clone https://gitlab.com/NemesisDevelopers/moto-camera/motorola_camera2_primary.git -b eleven-arm64 packages/apps/MotCamera2
+git clone https://gitlab.com/NemesisDevelopers/moto-camera/motorola_camera2_overlay.git -b ten packages/apps/MotCamera2-overlay
+```
+
+### Moto Signature App 🔧
+
+The Moto Signature App is an attractive platform where you can find all the features that make Motorola phones easy and enjoyable to use.Every time you open a Moto app, you will see information about the functions it provides. If MotoSignatureApp is not included in the source, the features will not work on the system you build.
+
+<b> Source Code: </b> 
+``` 
+git clone https://gitlab.com/NemesisDevelopers/motorola/motorola_motosignatureapp.git -b eleven packages/apps/MotoSignatureApp
 ```
 
 ### After you have cloned the other repositories, you are ready to your development! 🛠️
