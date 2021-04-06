@@ -36,6 +36,12 @@
     "branch": "eleven-arm64"
   },
   {
+    "repository": "NemesisDevelopers/moto-camera/motorola_camera2_overlay",
+    "target_path": "packages/apps/MotCamera2-overlay",
+    "remote": "gitlab",
+    "branch": "ten"
+  },
+  {
     "repository": "NemesisDevelopers/motorola/motorola_timeweather",
     "target_path": "packages/apps/TimeWeather",
     "remote": "gitlab",
