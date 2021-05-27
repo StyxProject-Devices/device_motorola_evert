@@ -400,6 +400,9 @@ vendor/lib/libmm-qcamera.so
 # Camera - Firmware
 vendor/firmware/cpp_firmware_v1_12_0.fw
 
+# Offmode charging
+vendor/bin/charge_only_mode
+
 # Display calib
 vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml
