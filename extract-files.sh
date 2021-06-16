@@ -12,6 +12,12 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
             sed -i "s/input/uhid input/" "${2}"
             ;;
+        # memset shim
+        vendor/bin/charge_only_mode)
+            for  LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
+            done
+            ;;
         # Rename sound_trigger for source built audio hal compat
         vendor/lib/hw/sound_trigger.primary.sdm660.so)
             "${PATCHELF}" --set-soname "sound_trigger.primary.sdm660.so" "${2}"
